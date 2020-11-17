@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
+    <meta name="description" content="Nikolaos Floros Portfolio Website" />
+    <meta name="author" content="Nikolaos Floros" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-
     <script
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
     ></script>
-
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:400,700,400italic,700italic"
       rel="stylesheet"
       type="text/css"
     />
@@ -31,10 +28,28 @@
       rel="stylesheet"
       type="text/css"
     />
-
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
+    <div id="vantaGlobe"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+      VANTA.GLOBE({
+        el: "#vantaGlobe",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x3fd1ff,
+        color2: 0x165fca,
+        size: 0.8,
+        backgroundColor: 0x232434,
+      });
+    </script>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
@@ -69,25 +84,25 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-      <div class="container">
-        <div class="masthead-subheading">Welcome To My Portfolio</div>
+      <div class="animated animatedFadeInUp fadeInUp container">
+        <div class="masthead-heading">Hello there 👋</div>
+        <div class="masthead-subheading">I'm Niko and this is my portfolio</div>
         <a class="js-scroll-trigger" href="#Projects">
-          <div class="btn btn-primary btn-xl text-uppercase">
-            Click Here For More
-            
+          <div class="header-click-for-more btn btn-primary btn-m">
+            Learn more
           </div></a
-           
         >
       </div>
-      </canvas>
     </header>
 
     <!-- Projects Grid-->
     <section class="page-section bg-light" id="Projects">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading">Projects</h2>
-          <h3 class="section-subheading text-muted">Under Construction</h3>
+          <h2 class="section-heading">Projects 🛠️</h2>
+          <h3 class="section-subheading text-muted">
+            A collection of my latest work
+          </h3>
         </div>
         <div class="row">
           <div class="col-lg-4 col-sm-6 mb-4">
@@ -97,11 +112,7 @@
                 data-toggle="modal"
                 href="#portfolioModal1"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/01-thumbnail.jpg"
@@ -123,11 +134,7 @@
                 data-toggle="modal"
                 href="#portfolioModal2"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/02-thumbnail.jpg"
@@ -149,11 +156,7 @@
                 data-toggle="modal"
                 href="#portfolioModal3"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/03-thumbnail.jpg"
@@ -175,11 +178,7 @@
                 data-toggle="modal"
                 href="#portfolioModal4"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/04-thumbnail.jpg"
@@ -201,11 +200,7 @@
                 data-toggle="modal"
                 href="#portfolioModal5"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/05-thumbnail.jpg"
@@ -227,11 +222,7 @@
                 data-toggle="modal"
                 href="#portfolioModal6"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
+                <div class="portfolio-hover"></div>
                 <img
                   class="img-fluid"
                   src="assets/img/portfolio/06-thumbnail.jpg"
@@ -253,7 +244,7 @@
     <section class="page-section" id="about">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading">About</h2>
+          <h2 class="section-heading">About 👨‍🔧</h2>
           <h3 class="section-subheading text-muted">My Story So Far</h3>
         </div>
         <ul class="timeline">
@@ -271,31 +262,33 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Ever since i was a small boy i can remember myself following my grandma around in the kitchen trying to understand what she was doing.
-                  As soon as i hit 18 i spent two years in culinary school and started working in different restaurants . 
-                  After years of burns,scrapes and cuts i realized that i only loved cooking as a hobby.
+                  Ever since i was a small boy i can remember myself following
+                  my grandma around in the kitchen trying to understand what she
+                  was doing. As soon as i hit 18 i spent two years in culinary
+                  school and started working in different restaurants . After
+                  years of burns,scrapes and cuts i realized that i only loved
+                  cooking as a hobby.
                 </p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/"
-                alt=""
-              />
+              <img class="rounded-circle img-fluid" src="assets/img/" alt="" />
             </div>
-            <div class="timeline-panel"> 
+            <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4></h4>
               </div>
               <div class="timeline-body">
                 <p class="text-muted"></p>
-                I was always a tech savvy and whenever i wasn't cooking i would spend my free time on my computer and so through a friend of 
-                mine i got introduced to coding, i can say it was love in the first sight! I Would spend hours online learning to code , its 
-                amazing how you can spend hours working on a project and it only feels like a few minutes passed, coding has the power 
-                to pull you in and make you forget about everything else!
+                I was always a tech savvy and whenever i wasn't cooking i would
+                spend my free time on my computer and so through a friend of
+                mine i got introduced to coding, i can say it was love in the
+                first sight! I Would spend hours online learning to code , its
+                amazing how you can spend hours working on a project and it only
+                feels like a few minutes passed, coding has the power to pull
+                you in and make you forget about everything else!
               </div>
             </div>
           </li>
@@ -313,23 +306,21 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Soon after i started coding i decided to take a leap of faith , say goodbye to my old life and 
-                  joined the software development course at the award winning Northcoders bootcamp.  
-                  It can be very challenging at times but there is nothing more exciting and rewarding than solving a coding problem! 
-                  The possibilities for learning an improving are endless and im glad i joined Northcoders because through their intense 
-                  coding bootcamp im one step closer to achieving my goals.
-
+                  Soon after i started coding i decided to take a leap of faith
+                  , say goodbye to my old life and joined the software
+                  development course at the award winning Northcoders bootcamp.
+                  It can be very challenging at times but there is nothing more
+                  exciting and rewarding than solving a coding problem! The
+                  possibilities for learning an improving are endless and im
+                  glad i joined Northcoders because through their intense coding
+                  bootcamp im one step closer to achieving my goals.
                 </p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted last">
             <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/"
-                alt=""
-              />
+              <img class="rounded-circle img-fluid" src="assets/img/" alt="" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -337,8 +328,10 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  With only a few weeks left on the course , im actively looking for a suitable position within your organization
-                  in which i can give my best and maximize my potential in order to benefit your organization
+                  With only a few weeks left on the course , im actively looking
+                  for a suitable position within your organization in which i
+                  can give my best and maximize my potential in order to benefit
+                  your organization
                 </p>
               </div>
             </div>
@@ -350,9 +343,10 @@
     <section class="page-section" id="contact">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading">Contact Me</h2>
+          <h2 class="section-heading">Contact 📮</h2>
           <h3 class="section-subheading">
-            Or send me an e-mail at nfloros92@gmail.com
+            Send me a message bellow or reach me via email
+            <a href="mailto:nfloros92@gmail.com">here</a>
           </h3>
         </div>
         <form id="contactForm" name="sentMessage" novalidate="novalidate">
@@ -422,7 +416,9 @@
     <footer class="footer py-4">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+          <div class="col-lg-4 text-lg-left">
+            Copyright © Niko Floros Portfolio - 2020
+          </div>
           <div class="col-lg-4 my-3 my-lg-0">
             <a
               class="btn btn-dark btn-social mx-2"
@@ -436,10 +432,6 @@
               href="https://www.linkedin.com/in/nfloros/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-          </div>
-          <div class="col-lg-4 text-lg-right">
-            <a class="mr-3" href="#!">Privacy Policy</a>
-            <a href="#!">Terms of Use</a>
           </div>
         </div>
       </div>
