@@ -11024,3 +11024,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
+section#contact {
+    margin-top: 100px;
+  }
+@media only screen and (max-width: 600px) {
+  section#contact {
+    margin-top: 300px !important;
+  }
+}
